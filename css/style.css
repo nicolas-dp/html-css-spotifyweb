@@ -16,6 +16,12 @@ body {
 
 }
 
+ul {
+    list-style: none;
+}
+
+
+
 :root {
     --navbar-color: #000000;
     --main-color: #141922;
@@ -63,7 +69,9 @@ body {
     height: 100vh;
 }
 
-
+.container-center{
+    height: calc(100vh - 80px);
+}
 
 
 /* Settings navbar */
@@ -169,3 +177,15 @@ li>h5 {
 
 }
 
+/* ****** */
+
+.nav-center>ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-center a{
+    font-size: 14px;
+    color: var(--subtext-color);
+}
