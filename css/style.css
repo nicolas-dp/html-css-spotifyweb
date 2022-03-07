@@ -4,3 +4,45 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+ul a>img{
+    float: left;
+    width: 20%;
+
+}
+
+ul a>h5{
+    display: inline-block;
+    padding: 0.6rem;
+}
+
+
+li>a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: inline-block
+}
+
+.container-nav{
+    width: 200px;
+    height: 600px;
+}
+
+.p-top{
+    padding-top: 1rem;
+}
+
+.p-1rem{
+    padding: 1rem;
+}
