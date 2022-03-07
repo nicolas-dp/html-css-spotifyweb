@@ -20,6 +20,13 @@ ul {
     list-style: none;
 }
 
+h2,h5{
+    color: var(--primarytext-color);
+}
+
+span{
+    color: var(--subtext-color);
+}
 
 
 :root {
@@ -188,4 +195,24 @@ li>h5 {
 .nav-center a{
     font-size: 14px;
     color: var(--subtext-color);
+}
+
+
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.col-15{
+    width: 16%;
+}
+
+.col-15>h5{
+    align-self: center;
+}
+
+.center-text{
+    display: flex;
+    align-self: center;
 }
