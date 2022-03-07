@@ -38,12 +38,15 @@ span{
     --icon-color: #D2D2D2;
     --primarytext-color: #FFFFFF;
     --bgtop-color: #080B12;
+    --bgfooter-color: #282828;
+
 }
 
 #site-header {
     background-color: var(--navbar-color);
     float: left;
     width: 15%;
+    height: calc(100vh - 60px)
 
 }
 
@@ -51,7 +54,16 @@ span{
     background-color: var(--main-color);
     float: left;
     width: 85%;
-    height: 100vh;
+    height: calc(100vh - 60px);
+}
+
+
+#site-footer{
+    background-color: var(--subtext-color);
+    height: 100vh; 
+    float: left;
+    width: 100%;
+    z-index: 3;
 }
 
 .p-top {
@@ -66,10 +78,14 @@ span{
     padding: 1rem;
 }
 
+.logo{
+    width: 150px;
+}
+
 /* Common */
 
 .container-nav {
-    height: 100vh;
+    height: calc(100vh - 120px);
 }
 
 .container-menu {
@@ -77,7 +93,8 @@ span{
 }
 
 .container-center{
-    height: calc(100vh - 80px);
+    overflow-y: auto;
+    height: calc(100vh - 120px);
 }
 
 
@@ -105,8 +122,8 @@ a {
 
 .playlist {
     display: block;
-    height: 55vh;
-    overflow: auto;
+    height: 200px;
+    overflow-y: auto;
 }
 
 .playlist li>a {
@@ -171,11 +188,11 @@ li>h5 {
 
 .upgrade {
     background-color: var(--bgtop-color);
-    height: 80px;
+    height: 60px;
     filter: opacity(1);
 }
 
-.upgrade h5 {
+.upgrade>a {
     border: 1px solid var(--primarytext-color);
     border-radius: 50px;
     position: absolute;
@@ -214,5 +231,21 @@ li>h5 {
 
 .center-text{
     display: flex;
-    align-self: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+.container-footer{
+    position: fixed;
 }
