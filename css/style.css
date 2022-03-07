@@ -1,46 +1,66 @@
 /* Utilities */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
     object-fit: contain;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
-#site-header{
-    background-color: black;
+:root {
+    --navbar-color: #000000;
+    --main-color: #141922;
+    --subtext-color: #717171;
+    --bgavatar-color: #808080;
+    --border-color: #ADFF2F;
+    --icon-color: #D2D2D2;
+    --primarytext-color: #FFFFFF;
+    --bgtop-color: #080B12;
 }
 
-#site-main{
+#site-header {
+    background-color: var(--navbar-color);
+    float: left;
+    width: 15%;
+
+}
+
+#site-main {
+    background-color: var(--main-color);
+    float: left;
+    width: 85%;
     height: 100vh;
 }
 
-.p-top{
+.p-top {
     padding-top: 1rem;
 }
 
-.p-bottom{
+.p-bottom {
     padding-bottom: 1rem;
 }
 
-.p-1rem{
+.p-1rem {
     padding: 1rem;
 }
 
 /* Common */
 
-.container-nav{
-    width: 200px;
-    height: 600px;
+.container-nav {
+    height: 100vh;
+}
+
+.container-menu {
+    height: 100vh;
 }
 
 
@@ -48,40 +68,46 @@ body{
 
 /* Settings navbar */
 
-ul a>img{
+ul a>img {
     float: left;
     width: 15%;
 
 }
 
-.primary-btn a>h5{
+.primary-btn a>h5 {
     display: inline-block;
     padding: 0.5rem;
     vertical-align: bottom;
 }
 
 
-li>a {
+a {
     text-decoration: none;
-    color: white;
+    color: var(--primarytext-color);
     list-style: none;
     display: inline-block
 }
 
-.playlist li>a{
-    color: gray;
+.playlist {
+    display: block;
+    height: 55vh;
+    overflow: auto;
+}
+
+.playlist li>a {
+    color: var(--subtext-color);
     padding: 0;
 }
 
-a>i{
+a>i {
     font-size: 33.9px;
 }
 
-li>h5{
-    color: white;
+li>h5 {
+    color: var(--primarytext-color);
 }
 
-.playlist a>h5{
+.playlist a>h5 {
     display: inline-block;
     padding: 0.5rem 0 0.5rem 0;
     vertical-align: bottom;
@@ -90,7 +116,7 @@ li>h5{
 
 /* Account in header */
 
-.account img{
+.account img {
     float: left;
     width: 15%;
 }
@@ -98,12 +124,12 @@ li>h5{
 
 /* Section download */
 
-.download{
-    color: gray;
-    border-bottom: 1px solid gray;
+.download {
+    color: var(--subtext-color);
+    border-bottom: 1px solid var(--subtext-color);
 }
 
-.download>img{
+.download>img {
     filter: brightness(0.6);
 }
 
@@ -112,15 +138,34 @@ li>h5{
 
 /* Section avatar */
 
-.avatar>img{
-    background-color: gray;
+.avatar>img {
+    background-color: var(--bgavatar-color);
     border-radius: 50%;
 }
 
-.avatar>h5{
-    color: white ;
+.avatar>h5 {
+    color:var(--primarytext-color);
     display: inline-block;
     padding: 0.5rem;
     vertical-align: bottom;
 }
+
 /* ********** */
+
+/* Section top header + button */
+
+.upgrade {
+    background-color: var(--bgtop-color);
+    height: 80px;
+    filter: opacity(1);
+}
+
+.upgrade h5 {
+    border: 1px solid var(--primarytext-color);
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    padding: 1rem 3rem 1rem;
+
+}
+
