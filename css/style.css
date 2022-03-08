@@ -75,23 +75,23 @@ a {
 
 .wrapper>aside,
 .wrapper>main {
-  height: 100%;
+    height: 100%;
 }
 
 .wrapper>main {
     width: calc(100% - 100px);
-  }
+}
 
-  .wrapper>aside {
+.wrapper>aside {
     width: 260px;
     background-color: var(--navbar-color);
     transition: all 1s;
-  }
+}
 
 
 .container-center {
     overflow-y: auto;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 160px);
 }
 
 
@@ -119,7 +119,7 @@ a {
 
 /* Settings navbar */
 
-.primary-btn a>h5 {
+.primary-btn h5 {
     display: inline-block;
     padding: 0.5rem;
     vertical-align: bottom;
@@ -143,9 +143,8 @@ a>i {
     font-size: 33.9px;
 }
 
-li>h5 {
-    color: var(--primarytext-color);
-}
+
+
 
 .playlist a>h5 {
     display: inline-block;
@@ -156,9 +155,14 @@ li>h5 {
 
 /* Account in header */
 
-.account img {
-    float: left;
-    width: 15%;
+
+ 
+.account img{
+    width: 15px;
+}
+
+.account span{
+    font-size: 13px;
 }
 
 
@@ -171,6 +175,11 @@ li>h5 {
 
 .download>img {
     filter: brightness(0.6);
+}
+
+
+.download>span{
+    vertical-align: top;
 }
 
 /* ********** */
@@ -186,7 +195,6 @@ li>h5 {
 .avatar>h5 {
     color: var(--primarytext-color);
     display: inline-block;
-    padding: 0.5rem;
     vertical-align: bottom;
 }
 
@@ -196,16 +204,22 @@ li>h5 {
 
 .upgrade {
     background-color: #080b126e;
-    height: 60px;
+    width: 100%;
+    height: 80px;
+    
 }
 
 .upgrade>a {
     border: 1px solid var(--primarytext-color);
     border-radius: 50px;
     position: absolute;
-    right: 0;
-    padding: 1rem 3rem 1rem;
-
+    right: 2%;
+    top: 4%;
+    font-size: 15px;
+    padding: 0.5rem 1rem 0.5rem;
+    transition: all 1s ease;
+    text-align: center;
+    
 }
 
 /* ****** */
@@ -234,15 +248,10 @@ li>h5 {
 }
 
 .center-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
 }
 
-.radius{
+.radius {
     border-radius: 50%;
 }
 
@@ -259,33 +268,57 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .left-player {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
 }
 
-.right-player{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-.central-player{
+.right-player {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    flex-wrap: nowrap;
+}
+
+
+.central-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
 }
 
 .container-footer i {
     color: var(--primarytext-color);
-    font-size: 30px;
+    font-size: 20px;
+    transition: all 0.5ms ease;
+}
+
+.right-player i {
+    color: var(--primarytext-color);
+    font-size: 20px;
+}
+
+.left-player>i {
+    font-size: 14px;
+    color: var(--subtext-color);
+}
+
+
+.right-player>img {
+    filter: invert(1) brightness(0.5);
+
+}
+
+.testo>h4 {
+    color: var(--primarytext-color);
 }
 
 /* Barra di stato */
@@ -297,8 +330,8 @@ footer {
 }
 
 
-.container-footer h5{
-    color:var(--subtext-color);
+.container-footer h5 {
+    color: var(--subtext-color);
 }
 
 
@@ -316,33 +349,87 @@ footer {
     border-radius: 2px;
 }
 
-.container-b{
+.container-b {
     width: 100px;
     height: 3px;
     background-color: var(--subtext-color);
     border-radius: 2px;
 }
 
-.container-sm{
+.container-sm {
     width: 20px;
     height: 3px;
     background-color: var(--icon-color);
     border-radius: 2px;
 }
 
+.status-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-.left-player>i{
-    font-size: 14px;
-    color: var(--subtext-color);
+/* *************** */
+
+
+/* Un pò di HOVER */
+
+.download>span:hover,
+.left-player>i:hover,
+.playlist a:hover,
+.nav-center a:hover {
+    color: var(--primarytext-color);
+}
+
+.primary-btn a>h5:hover {
+    color: var(--primarytext-color);
+}
+
+.download>img:hover,
+.primary-btn a>img:hover {
+    filter: none;
+}
+ 
+.testo>h5:hover{
+    color: var(--primarytext-color);
+    text-decoration: underline;
 }
 
 
-.right-player>img{
-    filter: invert(1) brightness(0.5);
 
+/* overlay on album */
+
+.container-overlay {
+    position: relative;
 }
 
 
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 97.5%;
+    transition: 0.5s ease;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container-overlay:hover .overlay {
+    opacity: 1;
+}
+
+/* Effetto animazione bounce su btn */
 
 
+.upgrade>a:hover {
+    font-size: 20px;
+}
 
+.central-player>i:hover{
+    font-size: 30px;
+}
