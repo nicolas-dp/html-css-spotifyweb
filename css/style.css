@@ -33,6 +33,13 @@ span{
     color: var(--subtext-color);
 }
 
+a {
+    text-decoration: none;
+    color: var(--primarytext-color);
+    list-style: none;
+    display: inline-block
+}
+
 
 :root {
     --navbar-color: #000000;
@@ -107,12 +114,6 @@ span{
 
 /* Settings navbar */
 
-/* ul a>img {
-    float: left;
-    width: 15%;
-
-} */
-
 .primary-btn a>h5 {
     display: inline-block;
     padding: 0.5rem;
@@ -120,12 +121,7 @@ span{
 }
 
 
-a {
-    text-decoration: none;
-    color: var(--primarytext-color);
-    list-style: none;
-    display: inline-block
-}
+
 
 .playlist {
     display: block;
@@ -194,9 +190,8 @@ li>h5 {
 /* Section top header + button */
 
 .upgrade {
-    background-color: var(--bgtop-color);
+    background-color: #080b126e;
     height: 60px;
-    filter: opacity(1);
 }
 
 .upgrade>a {
@@ -214,6 +209,7 @@ li>h5 {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .nav-center a{
@@ -221,9 +217,15 @@ li>h5 {
     color: var(--subtext-color);
 }
 
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
 .col-15{
-    width: 16%;
+    flex-basis: 200px;
+    
 } 
 
 .center-text{
