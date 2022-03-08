@@ -119,6 +119,24 @@ a {
 
 /* Settings navbar */
 
+.line{
+    position: absolute;
+    left: 0;
+    top: 82px;
+    width: 2px;
+    height: 24px;
+    background-color: var(--border-color);
+}
+
+.line-rotate{
+    position: relative;
+    left: 31%;
+    width: 34px;
+    height: 2px;
+    background-color: var(--border-color);
+}
+
+
 .primary-btn h5 {
     display: inline-block;
     padding: 0.5rem;
@@ -369,6 +387,28 @@ footer {
     gap: 10px;
 }
 
+.state-ball{
+    display: none;
+    position: relative;
+    left: 96%;
+    bottom: 35%;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--icon-color);
+}
+
+.state-ball-sm{
+    display: none; 
+    position: relative;
+    left: 85%;
+    bottom: 30%;
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(--icon-color);
+}
+
 /* *************** */
 
 
@@ -380,6 +420,13 @@ footer {
 .nav-center a:hover {
     color: var(--primarytext-color);
 }
+
+
+.left-player>img:hover{
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+
 
 .primary-btn a>h5:hover {
     color: var(--primarytext-color);
@@ -395,6 +442,37 @@ footer {
     text-decoration: underline;
 }
 
+
+.container-a:hover .container-lg{
+    width: 100px;
+    height: 5px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+}
+
+.container-a:hover{
+    height: 5px;
+}
+
+
+.container-a:hover .state-ball{
+    display: block;
+}
+
+.container-b:hover .container-sm{
+    width: 20px;
+    height: 4px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+}
+
+.container-b:hover{
+    height: 4px;
+}
+
+.container-b:hover .state-ball-sm{
+    display: block;
+}
 
 
 /* overlay on album */
