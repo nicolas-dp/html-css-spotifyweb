@@ -18,210 +18,220 @@
     </head>
     <body>
 
-        <!-- Nav bar menu -->
-        <aside id="site-header">
-            <div class="container-nav p-1rem">
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="">
-                </div>
 
-                <div class="navbar p-top">
-                    <ul class="primary-btn">
-                        <li>
-                            <a href="#">
-                                <img src="./img/home.svg" alt="">
-                                <h5>Home</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/search.svg" alt="">
-                                <h5>Cerca</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/libreria.svg" alt="">
-                                <h5>La Tua libreria</h5>
-                            </a>
-                        </li>
-                    </ul>
 
-                    <ul class="playlist p-top">
-                        <li><h5 class="p-top p-bottom">PLAYLIST</h5></li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-square-plus"></i>
-                                <h5>Crea Playlist</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><h5>Nome Playlist</h5></a>
-                        </li>
-                        <li>
-                            <a href="#"><h5>Nome Playlist</h5></a>
-                        </li>
-                        <li>
-                            <a href="#"><h5>Nome Playlist</h5></a>
-                        </li>
-                        <li>
-                            <a href="#"><h5>Nome Playlist</h5></a>
-                        </li>
-                        <li>
-                            <a href="#"><h5>Nome Playlist</h5></a>
-                        </li>
-                        <li>
-                            <a href="#"><h5>Nome Playlist</h5></a>
-                        </li>
-                        <li>
-                            <a href="#"><h5>Nome Playlist</h5></a>
-                        </li>
-                    </ul>
 
-                    <div class="account">
-                        <div class="download p-top p-bottom">
-                            <img src="./img/download.svg" alt="">
-                            <span class="p-1rem">Installa App</span>
-                        </div>
 
-                        <div class="avatar p-top p-bottom">
-                            <img src="./img/profile.svg" alt="">
-                            <h5>John Doe</h5>
-                        </div>
-
+        <div class="wrapper d-flex">
+            <!-- Nav bar menu -->
+            <aside>
+                <div class="clearfix p-1rem">
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="">
                     </div>
 
-                </div>
-            </div>
-
-        </aside>
-
-        <!-- Main part of a web app -->
-        <main id="site-main">
-            <div class="container-main">
-                <div class="upgrade">
-                    <a href="#"><h5>EFFETTUA L'UPGRADE</h5></a>
-                </div>
-                <div class="container-center">
-                    <div class="nav-center p-1rem">
-                        <ul>
-                            <li><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
+                    <div class=" p-top">
+                        <ul class="primary-btn">
+                            <li>
+                                <a href="#">
+                                    <img src="./img/home.svg" alt="">
+                                    <h5>Home</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="filter" src="./img/search.svg" alt="">
+                                    <h5 class="gray">Cerca</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="filter" src="./img/libreria.svg" alt="">
+                                    <h5 class="gray">La Tua libreria</h5>
+                                </a>
+                            </li>
                         </ul>
-                    </div>
 
-                    <div class="grid p-1rem">
-                        <h2 class="p-1rem">Recently played</h2>
-                        <div class="album">
-                            <div class="col-15 p-1rem">
-                                <img src="./img/metal_lifting.jpg" alt="">
+                        <h5 class="p-top p-bottom">PLAYLIST</h5>
+                        <ul class="playlist p-top">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-square-plus"></i>
+                                    <h5>Crea Playlist</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><h5>Nome Playlist</h5></a>
+                            </li>
+                            <li>
+                                <a href="#"><h5>Nome Playlist</h5></a>
+                            </li>
+                            <li>
+                                <a href="#"><h5>Nome Playlist</h5></a>
+                            </li>
+                            <li>
+                                <a href="#"><h5>Nome Playlist</h5></a>
+                            </li>
+                            <li>
+                                <a href="#"><h5>Nome Playlist</h5></a>
+                            </li>
+                            <li>
+                                <a href="#"><h5>Nome Playlist</h5></a>
+                            </li>
+                            <li>
+                                <a href="#"><h5>Nome Playlist</h5></a>
+                            </li>
+                        </ul>
 
-                                <div class="center-text p-top">
-                                    <h5>Heavy Metal</h5>
-                                    <span>Subtitle</span>
-                                </div>
+                        <div class="account">
+                            <div class="download p-top p-bottom">
+                                <img src="./img/download.svg" alt="">
+                                <span class="p-1rem">Installa App</span>
                             </div>
 
-                            <div class="col-15 p-1rem">
-                                <img src="./img/stranger.jpeg" alt="">
-                                <div class="center-text p-top">
-                                    <h5>Stranger Things, Vol. 1(a Netflix
-                                        Origianl Series Soundtrack)</h5>
-                                    <span>Kyle Dixon & Michael Stein</span>
-                                </div>
-
-                            </div>
-
-                            <div class="col-15 p-1rem">
-                                <img src="./img/aquietplace.jpeg" alt="">
-                                <div class="center-text p-top">
-                                    <h5>A quiet place</h5>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-
-                            <div class="col-15 p-1rem">
-                                <img src="./img/split.jpeg" alt="">
-                                <div class="center-text p-top">
-                                    <h5>Split</h5>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-
-                            <div class="col-15 p-1rem">
-                                <img src="./img/cure.jpeg" alt="">
-                                <div class="center-text p-top">
-                                    <h5>A cure for wellness</h5>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-
-                            <div class="col-15 p-1rem">
-                                <img src="./img/sinister.jpeg" alt="">
-                                <div class="center-text p-top">
-                                    <h5>Sinister</h5>
-                                    <span>Subtitle</span>
-                                </div>
+                            <div class="avatar p-top p-bottom">
+                                <img src="./img/profile.svg" alt="">
+                                <h5>John Doe</h5>
                             </div>
 
                         </div>
+
                     </div>
+                </div>
 
-                    <div class="grid p-1rem">
-                        <h2 class="p-1rem">Creato per John Doe</h2>
-                        <span class="p-1rem">Più ascolti, più accurati saranno i
-                            suggerimenti</span>
-                        <div class="album">
-                            <div class="col-15 p-1rem">
-                                <img src="./img/radar.jpeg" alt="">
-                                <div class="center-text p-top">
-                                    <h5>Release Radar</h5>
-                                </div>
-                            </div>
+            </aside>
 
-                            <div class="col-15 p-1rem">
-                                <img src="./img/mixdaily.jpeg" alt="">
-                                <div class="center-text p-top">
-                                    <h5>Daily Mix 1</h5>
-                                </div>
-                            </div>
-
+            <!-- Main part of a web app -->
+            <main>
+                <div class="container-main">
+                    <div class="upgrade">
+                        <a href="#"><h5>EFFETTUA L'UPGRADE</h5></a>
+                    </div>
+                    <div class="container-center">
+                        <div class="nav-center p-1rem">
+                            <ul>
+                                <li><a href="#">IN EVIDENZA</a></li>
+                                <li><a href="">PODCAST</a></li>
+                                <li><a href="#">CLASSIFICHE</a></li>
+                                <li><a href="#">GENERI E MOOD</a></li>
+                                <li><a href="#">NUOVE USCITE</a></li>
+                                <li><a href="#">SCOPRI</a></li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <div class="grid p-1rem">
-                        <h2 class="p-1rem">Artisti più popolari</h2>
-                        <span class="p-1rem">Più ascolti, più accurati saranno i
-                            suggerimenti</span>
-                        <div class="album">
-                            <div class="col-15 p-1rem radius">
-                                <img src="./img/radar.jpeg" alt="">
+                        <div class="grid p-1rem">
+                            <h2 class="p-1rem">Recently played</h2>
+                            <div class="album d-flex">
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>Heavy Metal</h5>
+                                        <span>Subtitle</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/stranger.jpeg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>Stranger Things, Vol. 1(a Netflix
+                                            Origianl Series Soundtrack)</h5>
+                                        <span>Kyle Dixon & Michael Stein</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>A quiet place</h5>
+                                        <span>Subtitle</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/split.jpeg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>Split</h5>
+                                        <span>Subtitle</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/cure.jpeg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>A cure for wellness</h5>
+                                        <span>Subtitle</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/sinister.jpeg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>Sinister</h5>
+                                        <span>Subtitle</span>
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <div class="col-15 p-1rem radius">
-                                <img src="./img/mixdaily.jpeg" alt="">
-                            </div>
-
                         </div>
+
+                        <div class="grid p-1rem">
+                            <h2 class="p-1rem">Creato per John Doe</h2>
+                            <span class="p-1rem">Più ascolti, più accurati
+                                saranno i
+                                suggerimenti</span>
+                            <div class="album">
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/radar.jpeg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>Release Radar</h5>
+                                    </div>
+                                </div>
+
+                                <div class="col-15 p-1rem">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                    <div class="center-text p-top">
+                                        <h5>Daily Mix 1</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="grid p-1rem">
+                            <h2 class="p-1rem">Artisti più popolari</h2>
+                            <span class="p-1rem">Più ascolti, più accurati
+                                saranno i
+                                suggerimenti</span>
+                            <div class="album">
+                                <div class="col-15 p-1rem radius">
+                                    <img src="./img/radar.jpeg" alt="">
+                                </div>
+
+                                <div class="col-15 p-1rem radius">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
+
+
 
                 </div>
 
 
 
-            </div>
+
+            </main>
+
+        </div>
 
 
-
-
-        </main>
 
         <!-- Bar of music control -->
-        <footer id="site-footer">
+        <footer>
             <div class="container-footer">
 
             </div>
