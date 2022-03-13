@@ -300,7 +300,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
     flex-wrap: nowrap;
 }
 
@@ -321,7 +321,7 @@ footer {
 
 .right-player i {
     color: var(--primarytext-color);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .left-player>i {
@@ -348,7 +348,11 @@ footer {
 }
 
 
-.container-footer h5 {
+.status-bar>h5{
+    color: var(--icon-color);
+}
+
+.testo>h5 {
     color: var(--subtext-color);
 }
 
