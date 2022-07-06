@@ -118,8 +118,8 @@ a {
 
 
 .container-center {
+    height: calc(100vh - 157px);
     overflow-y: auto;
-    height: calc(100 - 160px);
 }
 
 /* Setting green line */
@@ -131,7 +131,7 @@ a {
 .line {
     position: absolute;
     left: 0;
-    top: 82px;
+    top: 69px;
     width: 2px;
     height: 24px;
     background-color: var(--border-color);
@@ -563,83 +563,3 @@ footer {
 
 }
 
-
-
-@media screen and (max-width: 767px) {
-
-    .wrapper {
-        width: 100%;
-        height: calc(100vh - 80px);
-    }
-
-    .wrapper>aside,
-    .wrapper>main {
-        height: 100%;
-    }
-
-
-    .container-a {
-        width: 100%;
-    }
-
-    .container-lg {
-        width: 50px;
-    }
-
-    .upgrade {
-        display: none;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .logo-small {
-        display: block;
-        width: 20px;
-    }
-
-    .primary-btn>li h5,
-    .playlist>li h5,
-    .account span, h5 {
-        display: none;
-    }
-
-
-}
-
-
-@media screen and (max-width: 390px) {
-
-    .wrapper {
-        width: 100%;
-        height: calc(100vh - 80px);
-    }
-
-    .wrapper>aside,
-    .wrapper>main {
-        height: 100%;
-    }
-
-    .primary-btn>li h5,
-    .playlist>li h5,
-    .account span, h5 {
-        display: none;
-    }
-
-
-
-    .upgrade {
-        display: none;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .logo-small {
-        display: block;
-        width: 20px;
-    }
-
-}
